@@ -82,7 +82,7 @@ while (stevesLoan.isForeclosed() === false) {
   steve.payDay();
   steve.makePayment();
   month++;
-  if (stevesLoan.getBalance === 0) {
+  if (stevesLoan.getBalance() === 0) {
     break;
   }
 }
